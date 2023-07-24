@@ -1,1 +1,31 @@
-abc
+<html>
+<head>
+    <script>
+        function myFunction()
+        {
+            document.getElementById('demo').innerHTML="Paragraph changed";
+        }
+    </script>
+    <center><h3 style="color:#e9e9f0">Survey Page</h3></center>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<marquee><blink><p style="color: #080707"><strong>Please input your details</strong></p></blink></marquee>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">Click here</button>
+<center><button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click</button></center>
+<form>
+   <center><label>First Name</label>&nbsp; <input type="text" name="fname" value="" placeholder="Enter your name here"></center> 
+   <br><center><lable>Email</lable>&nbsp; &nbsp;<input type="email" name="email" value="" placeholder="Enter your email"></center>
+   <br><center><label>DOB</label>&nbsp;<input type="date" name="DOB" value="" placeholder="Enter your DOB here"</center>
+  <br><center><label>Education</label><select id="Education" name="Education">
+       <option value="Class 10 pass">Class 10 pass</option><option value="HS">HS</option><option value="Graduate">Graduate</option>
+   </select></center>
+ <br><center><input type="button" value="Submit" onclick="alert('Your form has been submitted')"></center>
+   </form>
+</body>
+</html>
