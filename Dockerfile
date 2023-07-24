@@ -13,7 +13,7 @@
 #   limitations under the License.
 
 FROM node:alpine
-LABEL maintainer="philippe_mulet@fr.ibm.com"
+LABEL maintainer="souma.bose@edifixio.com"
 
 # hadolint ignore=DL3017
 RUN apk update && apk upgrade
