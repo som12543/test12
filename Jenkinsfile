@@ -1,11 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('dev') {
+    stage('uat') {
       steps {
         sh '''mkdir test
-minikube start
-kubectl get nodes'''
+'''
       }
     }
 
